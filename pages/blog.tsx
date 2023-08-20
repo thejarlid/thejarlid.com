@@ -1,10 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from '@/components/common/layout'
-import Column from '@/components/common/Column'
+import Column from '@/components/common/column'
 import ColumnHeader from '@/components/common/columnHeader'
 
-export default function BlogPage({ data }) {
+export default function BlogPage() {
   return (
     <Layout>
       <Column>
