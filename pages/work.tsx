@@ -25,9 +25,6 @@ export type WorkPostProps = {
 }
 
 export default function WorkPage({ posts }: WorkPostProps) {
-  posts?.forEach((post) => {
-    console.log(post.frontMatter)
-  });
   return (
       <>
         <Head>
@@ -44,13 +41,11 @@ export default function WorkPage({ posts }: WorkPostProps) {
               {posts &&
                posts
                 .sort((a: WorkPost, b: WorkPost) => {
-                  console.log(a.frontMatter.publishDate)
                   return new Date(b.frontMatter.publishDate).getTime() - new Date(a.frontMatter.publishDate).getTime()
                 })
                 .map((post) => {
                   return (
-                    // WorkSection(post.frontMatter)
-                    <p key={post.slug}>{post.frontMatter.title}</p>
+                    <WorkSection key={post.slug} props={post.frontMatter} />
                   )
                 })
               }
