@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import Image from '../thumbnailImage/thumbnailImage';
-import { Link } from "gatsby"
+import Image from 'next/image'
+import Link from 'next/link'
 
 const SectionWrapper = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const InfoColumn = styled.div`
   min-width: 80px;
   max-width: 80px;
   width: 80px;
-  margin-right 40px;
+  margin-right: 40px;
 `
 
 const DetailColumn = styled.div`
@@ -26,7 +26,9 @@ const SectionTitle = styled.a`
 
 const Thumbnail = styled.div`
   width: 70px;
-  margin-top: 10px; 
+  height: 70px;
+  position: relative;
+  margin-top: 10px;
   border-radius: 15%;
   overflow: hidden;
 `
@@ -46,14 +48,14 @@ export default function SplitDetailSection(props) {
 
   return (
     <SectionWrapper sectionMargin={sectionMargin}>
-      <InfoColumn> 
+      <InfoColumn>
         { props.date && <DateText>{props.date}</DateText> }
-        { props.imgSrc && (
+        { props.link && (
           <Thumbnail>
-            <Link to={projectLink}><Image alt={projectName} filename={props.imgSrc} /></Link>
+            <Link href={projectLink}><Image src={`/work/${props.imgSrc}`} layout='fill' objectFit='contain' alt={projectName} /></Link>
           </Thumbnail>
         )}
-      </InfoColumn> 
+      </InfoColumn>
       <DetailColumn>
         { props.name && <SectionTitle href={projectLink}>{props.name}</SectionTitle> }
         { props.description && <DetailDescriptionText>{props.description}</DetailDescriptionText> }
