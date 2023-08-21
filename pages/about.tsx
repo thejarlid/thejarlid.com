@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <>
       <Head>
-        <title>Dilraj Devgun - Work</title>
+        <title>Dilraj Devgun - About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
