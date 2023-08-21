@@ -1,21 +1,20 @@
 import React from "react"
-import SplitDetailSection from "../SplitDetailSection/SplitDetailSection";
+import SplitDetailSection from '@/components/work/SplitDetailSection'
 
 export default function WorkSection(props) {
-  const projectName = props.workItem.name ? props.workItem.name : ""
-  const projectDate = props.workItem.date ? props.workItem.date : ""
-  const projectLink = props.workItem.link ? props.workItem.link : ""
-  const projectDescription = props.workItem.description ? props.workItem.description : ""
-  const projectIconPath = props.workItem.imgSrc ? props.workItem.imgSrc : ""
-
+  const projectName = props.title ? props.title : ""
+  const projectDate = props.date ? props.date : ""
+  const projectLink = props.url ? props.url : ""
+  const projectDescription = props.description ? props.description : ""
+  const projectIconPath = props.imgSrc ? props.imgSrc : ""
 
   return (
-    <SplitDetailSection 
-      name={projectName} 
-      date={projectDate} 
-      link={projectLink} 
-      description={projectDescription} 
-      imgSrc={projectIconPath} 
+    <SplitDetailSection
+      name={projectName}
+      date={projectDate}
+      link={projectLink}
+      description={projectDescription}
+      imgSrc={projectIconPath}
       sectionMargin="75px"/>
   )
 }
