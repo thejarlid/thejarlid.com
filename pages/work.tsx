@@ -5,24 +5,7 @@ import Layout from '@/components/common/layout'
 import ColumnHeader from '@/components/common/columnHeader'
 import Head from 'next/head';
 import { WORK_DIR, getFrontMatterForAllPostsInDir } from '@/src/utils'
-
-type WorkFrontMatter = {
-  title: string
-  publishDate: string
-  date: string
-  url: string
-  imgSrc: string
-  description: string
-}
-
-type WorkPost = {
-  frontMatter: WorkFrontMatter
-  slug: string
-}
-
-export type WorkPostProps = {
-  posts?: WorkPost[]
-}
+import { WorkPostProps, WorkPost } from "@/src/types"
 
 export default function WorkPage({ posts }: WorkPostProps) {
   return (
@@ -45,7 +28,7 @@ export default function WorkPage({ posts }: WorkPostProps) {
                 })
                 .map((post) => {
                   return (
-                    <WorkSection key={post.slug} props={post.frontMatter} />
+                    <WorkSection {...post.frontMatter} key={post.slug} />
                   )
                 })
               }

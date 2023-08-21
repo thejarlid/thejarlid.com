@@ -3,10 +3,14 @@ import styled from "styled-components"
 import Image from 'next/image'
 import Link from 'next/link'
 
-const SectionWrapper = styled.div`
+interface SectionWrapperProps {
+  sectionMargin?:string
+}
+
+const SectionWrapper = styled.div<SectionWrapperProps>`
   display: flex;
   flex-direction: row;
-  margin: ${props => props.sectionMargin || "50px"} 0;
+  margin: ${(props: { sectionmargin: any }) => props.sectionmargin || "50px"} 0;
 `
 
 const InfoColumn = styled.div`
@@ -41,18 +45,27 @@ const DetailDescriptionText = styled.p`
   margin-top: 10px;
 `
 
-export default function SplitDetailSection(props) {
+type SplitDetailInformation = {
+  name?: string
+  date?: string
+  link?: string
+  description?: string
+  imgSrc?: string
+  sectionMargin?: string
+}
+
+export default function SplitDetailSection(props: SplitDetailInformation) {
   const projectName = props.name ? props.name : ""
   const projectLink = props.link ? props.link : "."
   const sectionMargin = props.sectionMargin ? props.sectionMargin : null
 
   return (
-    <SectionWrapper sectionMargin={sectionMargin}>
+    <SectionWrapper sectionmargin={sectionMargin}>
       <InfoColumn>
         { props.date && <DateText>{props.date}</DateText> }
         { props.link && (
           <Thumbnail>
-            <Link href={projectLink}><Image src={`/work/${props.imgSrc}`} layout='fill' objectFit='contain' alt={projectName} /></Link>
+            <Link href={projectLink} style={{top:0, bottom:0}}><Image src={`/work/${props.imgSrc}`} fill sizes="70px 70px" style={{objectFit: 'cover'}} alt={projectName} /></Link>
           </Thumbnail>
         )}
       </InfoColumn>
