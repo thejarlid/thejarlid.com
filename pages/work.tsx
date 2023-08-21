@@ -4,8 +4,10 @@ import Column from '@/components/common/column'
 import Layout from '@/components/common/layout'
 import ColumnHeader from '@/components/common/columnHeader'
 import Head from 'next/head';
+import { WORK_DIR, getAllPostsInDirWithFrontMatter } from '@/src/utils'
+import { WorkProps } from 'types'
 
-export default function WorkPage(/*{ data }*/) {
+export default function WorkPage({ allWorkData }: WorkProps) {
   return (
       <>
         <Head>
@@ -22,4 +24,13 @@ export default function WorkPage(/*{ data }*/) {
         </Layout>
       </>
     )
+}
+
+export async function getStaticProps() {
+  const allWorkData = getAllPostsInDirWithFrontMatter(WORK_DIR)
+  return {
+    props: {
+      allWorkData,
+    },
+  };
 }
