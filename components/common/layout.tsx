@@ -3,6 +3,7 @@ import Header from "./header"
 import Footer from "./footer"
 import styled from "styled-components"
 import { createGlobalStyle } from 'styled-components'
+import { Analytics } from '@vercel/analytics/react';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -22,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: normal;
   }
-  
+
   html, body {
     width: 100%;
     height: 100%;
@@ -32,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 16px;
   }
-  
+
   h1 {
     position: relative;
     font-weight: 300;
@@ -43,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 2px;
     color: rgb(17, 17, 17);
   }
-  
+
   h2 {
     font-size: 2rem;
     font-weight: 200;
@@ -53,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 2px;
     color: rgb(17, 17, 17);
   }
-  
+
   h3 {
     margin: 0;
     font-size: 1.6em;
@@ -81,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 2px;
     color: rgb(17, 17, 17);
   }
-  
+
   p {
     color: rgb(102, 102, 102);
     display: block;
@@ -92,14 +93,14 @@ const GlobalStyle = createGlobalStyle`
     line-height: 22px;
     text-align: left;
   }
-  
+
   a {
     letter-spacing: 2px;
     padding-bottom: 0px;
     text-decoration: none;
     color: #77c4d3;
   }
-  
+
   a:hover {
     color: #77c4d3;
     border-color: #77c4d3;
@@ -138,6 +139,7 @@ export default function Layout({ children }: Props) {
       <Header />
       <SiteContent>{children}</SiteContent>
       <Footer />
+      <Analytics />
     </Site>
   );
 }
