@@ -4,13 +4,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 interface SectionWrapperProps {
-  sectionMargin?:string
+  $sectionMargin?:string
 }
 
-const SectionWrapper = styled.div<SectionWrapperProps>`
+const SectionWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  margin: ${(props: { sectionmargin: any }) => props.sectionmargin || "50px"} 0;
+  margin: ${props => props.$sectionMargin || "50px"} 0;
 `
 
 const InfoColumn = styled.div`
@@ -60,7 +60,7 @@ export default function SplitDetailSection(props: SplitDetailInformation) {
   const sectionMargin = props.sectionMargin ? props.sectionMargin : null
 
   return (
-    <SectionWrapper sectionmargin={sectionMargin}>
+    <SectionWrapper $sectionMargin={sectionMargin}>
       <InfoColumn>
         { props.date && <DateText>{props.date}</DateText> }
         { props.link && (
