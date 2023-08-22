@@ -96,9 +96,9 @@ export default function Header() {
             <NavigationListElement>
               <NavLink href="/work">Work</NavLink>
             </NavigationListElement>
-            <NavigationListElement>
+            {/* <NavigationListElement>
               <NavLink href="/blog">Blog</NavLink>
-            </NavigationListElement>
+            </NavigationListElement> */}
             <NavigationListElement>
               <NavLink href="/about">About</NavLink>
             </NavigationListElement>
