@@ -65,7 +65,9 @@ export default function SplitDetailSection(props: SplitDetailInformation) {
         { props.date && <DateText>{props.date}</DateText> }
         { props.link && (
           <Thumbnail>
-            <Link href={projectLink} style={{top:0, bottom:0}}><Image src={`/work/${props.imgSrc}`} fill sizes="70px 70px" style={{objectFit: 'cover'}} alt={projectName} /></Link>
+            <Link href={projectLink} style={{top:0, bottom:0, width:'100%', height:'100%', position:'absolute'}}>
+              <Image src={`/work/${props.imgSrc}`} fill sizes="70px 70px" style={{objectFit: 'cover'}} alt={projectName} />
+            </Link>
           </Thumbnail>
         )}
       </InfoColumn>
