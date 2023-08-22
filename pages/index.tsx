@@ -48,7 +48,7 @@ const Prompt = styled.h2`
     position: relative;
     display: block;
   }
-  
+
 `
 
 const HomeContent = styled.div`
@@ -76,7 +76,7 @@ const HomeContent = styled.div`
     padding-bottom: 0;
     padding-bottom: 0%;
   }
-  
+
 `
 
 export default function Home() {
@@ -88,13 +88,13 @@ export default function Home() {
       </Head>
       <Layout>
         <HomeContent>
-          <HelloMessage>Hi, I'm Dilraj.</HelloMessage>
+          <HelloMessage>Hi, I&apos;m Dilraj.</HelloMessage>
           <Prompt>
             <Typed strings={[
                 "In a nutshell I build cool things.",
                 "My passion in CS are at the intersection of low level systems and ML, CV, and AI.",
                 "I'm a software engineer on the Computer Vision and ML firmware team @ Meta Reality Labs.",
-                "Previously a software engineer on the HoloLens team @ Microsoft and Instagram Web Server Team @ Meta.", 
+                "Previously a software engineer on the HoloLens team @ Microsoft and Instagram Web Server Team @ Meta.",
                 "I love to design and develop iOS apps in my free time.",
                 "I'm a first generation college graduate.",
                 "I love soccer, tennis, boxing, and surfing.",
