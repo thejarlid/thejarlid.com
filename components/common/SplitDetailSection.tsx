@@ -10,7 +10,7 @@ import Link from 'next/link'
 const SectionWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  margin: ${props => props.$sectionMargin || "50px"} 0;
+  margin: 90px 0;
 `
 
 const InfoColumn = styled.div`
@@ -51,16 +51,14 @@ type SplitDetailInformation = {
   link?: string
   description?: string
   imgSrc?: string
-  sectionMargin?: string
 }
 
 export default function SplitDetailSection(props: SplitDetailInformation) {
   const projectName = props.name ? props.name : ""
   const projectLink = props.link ? props.link : "."
-  const sectionMargin = props.sectionMargin ? props.sectionMargin : null
 
   return (
-    <SectionWrapper $sectionMargin={sectionMargin}>
+    <SectionWrapper>
       <InfoColumn>
         { props.date && <DateText>{props.date}</DateText> }
         { props.link && (

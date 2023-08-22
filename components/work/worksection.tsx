@@ -15,7 +15,6 @@ export default function WorkSection({title, date, url, description, imgSrc}: Wor
       date={projectDate}
       link={projectLink}
       description={projectDescription}
-      imgSrc={projectIconPath}
-      sectionMargin="90px"/>
+      imgSrc={projectIconPath}/>
   )
 }
