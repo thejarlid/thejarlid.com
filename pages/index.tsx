@@ -92,18 +92,17 @@ export default function Home() {
           <Prompt>
             <Typed strings={[
                 "In a nutshell I build cool things.",
-                "A once aspirational chef, astronaut, and superhero turned software engineer.",
+                "Welcome to my nerdy hypertext corner of the internet.",
+                "I'm a once aspirational chef turned software engineer.",
                 "My passion in CS are at the intersection of low level systems and ML, CV, and AI.",
-                "This is my nerdy corner of the internet.",
-                "I'm a software engineer on the Computer Vision and ML firmware team @ Meta Reality Labs.",
-                "Previously a software engineer on the HoloLens team @ Microsoft and Instagram Web Server Team @ Meta.",
+                "I'm a software engineer on the Eye tracking Computer Vision and ML algorithms team @ Meta Reality Labs.",
                 "I love to design and develop iOS apps in my free time.",
                 "I'm a first generation college graduate.",
+                "I studied Computer Science @ the University of Washington.",
                 "I love soccer, tennis, boxing, and surfing.",
                 "My favourite book is Notes From the Underground.",
                 "My favourite albums are Channel Orange, Not Waving But Drowning, My Beautiful Dark Twisted Fantasy, and Sometimes I Might Be Introvert.",
                 "I grew up in England and currently live in New York.",
-                "I studied Computer Science @ the University of Washington."
               ]}
                 typeSpeed={30}
                 backSpeed={20}
