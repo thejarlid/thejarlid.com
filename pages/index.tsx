@@ -92,7 +92,9 @@ export default function Home() {
           <Prompt>
             <Typed strings={[
                 "In a nutshell I build cool things.",
+                "A once aspirational chef, astronaut, and superhero turned software engineer.",
                 "My passion in CS are at the intersection of low level systems and ML, CV, and AI.",
+                "This is my nerdy corner of the internet.",
                 "I'm a software engineer on the Computer Vision and ML firmware team @ Meta Reality Labs.",
                 "Previously a software engineer on the HoloLens team @ Microsoft and Instagram Web Server Team @ Meta.",
                 "I love to design and develop iOS apps in my free time.",

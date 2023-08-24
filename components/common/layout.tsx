@@ -86,9 +86,9 @@ const GlobalStyle = createGlobalStyle`
   p {
     color: rgb(102, 102, 102);
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 1px;
     line-height: 22px;
     text-align: left;
