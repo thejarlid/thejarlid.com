@@ -103,6 +103,7 @@ export default function Home() {
                 "My favourite book is Notes From the Underground.",
                 "My favourite albums are Channel Orange, Not Waving But Drowning, My Beautiful Dark Twisted Fantasy, and Sometimes I Might Be Introvert.",
                 "I grew up in England and currently live in New York.",
+                "I'm a lifelong Arsenal supporter",
               ]}
                 typeSpeed={30}
                 backSpeed={20}
