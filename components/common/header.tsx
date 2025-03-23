@@ -84,7 +84,7 @@ const StaticFileLink = styled.a`
 export default function Header() {
   return (
     <div>
-      <header style={{overflow: 'auto'}}>
+      <header style={{ overflow: 'auto' }}>
         <Navbar>
           <Navigation>
             <NavigationListElement>
@@ -92,6 +92,9 @@ export default function Header() {
             </NavigationListElement>
             <NavigationListElement>
               <StaticFileLink href={'/dilraj-devgun-resume.pdf'}>Resume</StaticFileLink>
+            </NavigationListElement>
+            <NavigationListElement>
+              <NavLink href={'https://www.btwnun.me'}>Blog</NavLink>
             </NavigationListElement>
             <NavigationListElement>
               <NavLink href="/work">Work</NavLink>
