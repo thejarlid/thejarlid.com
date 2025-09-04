@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vibe Dining vibe logo">
+  <!-- Chat bubble outline -->
+  <path d="M12 20c0-6 6-12 12-12h16c6 0 12 6 12 12v12c0 6-6 12-12 12H24l-8 8v-8c-2-2-4-6-4-12V20z"
+        stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/>
+  <!-- Martini glass inside -->
+  <path d="M24 20 L40 20 L32 28 Z M32 28 V40"
+        stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

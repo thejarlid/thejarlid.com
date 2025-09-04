@@ -91,24 +91,23 @@ export default function Home() {
           <HelloMessage>Hi, I&apos;m Dilraj.</HelloMessage>
           <Prompt>
             <Typed strings={[
-                "In a nutshell I build cool things.",
-                "Welcome to my nerdy hypertext corner of the internet.",
-                "I'm a once aspirational chef turned software engineer.",
-                "My passion in CS are at the intersection of low level systems and ML, CV, and AI.",
-                "I'm a software engineer on the Eye tracking Computer Vision and ML algorithms team @ Meta Reality Labs.",
-                "I love to design and develop iOS apps in my free time.",
-                "I'm a first generation college graduate.",
-                "I studied Computer Science @ the University of Washington.",
-                "I love soccer, tennis, boxing, and surfing.",
-                "My favourite book is Notes From the Underground.",
-                "My favourite albums are Channel Orange, Not Waving But Drowning, My Beautiful Dark Twisted Fantasy, and Sometimes I Might Be Introvert.",
-                "I grew up in England and currently live in New York.",
-                "I'm a lifelong Arsenal supporter",
-              ]}
-                typeSpeed={30}
-                backSpeed={20}
-                backDelay={1000}
-                loop={true}/>
+              "In a nutshell I like building things for fun.",
+              "Welcome to my nerdy hypertext corner of the internet.",
+              "I'm a once aspirational chef turned software engineer.",
+              "My passion in CS are at the intersection of product, AI, and low level systems.",
+              "I'm a software engineer on the Eye tracking Computer Vision and ML algorithms team @ Meta Reality Labs.",
+              "I'm a first generation college graduate.",
+              "I studied Computer Science @ the University of Washington.",
+              "I love soccer, tennis, boxing, and surfing.",
+              "My favourite book is Notes From the Underground.",
+              "My favourite albums are Channel Orange, LeisureVision, My Beautiful Dark Twisted Fantasy, and Sometimes I Might Be Introvert.",
+              "I grew up in England and currently live in New York.",
+              "I'm a lifelong Arsenal supporter",
+            ]}
+              typeSpeed={30}
+              backSpeed={20}
+              backDelay={1000}
+              loop={true} />
           </Prompt>
         </HomeContent>
       </Layout>
